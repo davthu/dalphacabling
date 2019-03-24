@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "AvantGarde Bk BT";
+  src: url("/fonts/AvantGardeITCbyBT-Book.woff2") format("woff2"),
+    url("/fonts/AvantGardeITCbyBT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
