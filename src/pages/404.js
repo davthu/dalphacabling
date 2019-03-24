@@ -7,7 +7,11 @@ function NotFoundPage() {
   return (
     <Layout>
       <SEO title="404: Not found" />
-      <div>404</div>
+      <div className="pt-16 min-h-screen text-sans flex flex-col">
+        <div className="flex justify-center items-center flex-1">
+          Sidan hittades inte
+        </div>
+      </div>
     </Layout>
   );
 }
