@@ -26,8 +26,15 @@ function Layout({ children }) {
           </div>
 
           <footer>
-            <div className="flex flex-wrap items-center justify-center p-4 md:p-8">
-              &copy; 2019 Dalpha Cabling AB
+            <div className="p-4 md:p-8">
+              <h4 className="text-orange mb-2">Dalpha Cabling</h4>
+              Tel: 08-777 65 56
+              <br />
+              kontakt@dalphacabling.com
+              <br />
+              Svarvarvägen 20
+              <br />
+              13238 Nacka
             </div>
           </footer>
         </div>

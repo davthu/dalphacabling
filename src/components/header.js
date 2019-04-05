@@ -20,25 +20,42 @@ function Header({ siteTitle }) {
         />
       </div>
 
-      <div
-        className={`${
-          isExpanded ? `flex` : `hidden`
-        } fixed pin-t pin-l bg-grey-darkest min-h-screen text-sans flex-col w-full`}
-      >
-        <div className="flex justify-center items-center flex-1 flex-col text-3xl">
-          <Link to="/" className="mt-4 no-underline text-white">
-            Hem
-          </Link>
-
-          <Link to="/about" className="mt-4 no-underline text-white">
-            Om oss
-          </Link>
-
-          <Link to="/contact" className="mt-4 no-underline text-white">
-            Kontakt
-          </Link>
+      {isExpanded && (
+        <div className="fadeIn flex fixed pin-t pin-l bg-orange min-h-screen text-sans flex-col w-full">
+          <div className="flex justify-center items-center flex-1 flex-col text-3xl">
+            <Link
+              to="/"
+              className="slideInDown mt-4 no-underline hover:underline text-white"
+            >
+              Hem
+            </Link>
+            <Link
+              to="/services"
+              className="slideInDown animated-delay-1s mt-4 no-underline hover:underline text-white"
+            >
+              Tjänster
+            </Link>
+            <Link
+              to="/clients"
+              className="slideInDown animated-delay-2s mt-4 no-underline hover:underline text-white"
+            >
+              Kunder
+            </Link>
+            <Link
+              to="/about"
+              className="slideInDown animated-delay-3s mt-4 no-underline hover:underline text-white"
+            >
+              Om oss
+            </Link>
+            <Link
+              to="/contact"
+              className="slideInDown animated-delay-4s mt-4 no-underline hover:underline text-white"
+            >
+              Kontakt
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 }

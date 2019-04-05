@@ -7,9 +7,17 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="Hem" keywords={[]} />
-      <div className="bg-grey-darkest min-h-screen text-sans flex flex-col">
-        <div className="flex justify-center items-center flex-1">
-          <img src={logo} alt="" className="w-3/4 md:w-1/2" />
+      <div className="bg-grey-darkest text-white min-h-screen text-sans flex flex-col">
+        <div className="flex justify-center items-center flex-1 flex-col">
+          <img src={logo} alt="" className="logo w-3/4 sm:w-1/2 md:w-1/3" />
+          <div className="mt-10 text-center">
+            <p className="text-lg">
+              Heltäckande lösningar inom säkerhets- och teleteknik.
+            </p>
+            <button className="text-lg bg-white hover:bg-orange text-grey-darkest hover:text-white font-semibold mt-6 py-4 px-8 rounded-full">
+              Se alla tjänster
+            </button>
+          </div>
         </div>
       </div>
     </Layout>
