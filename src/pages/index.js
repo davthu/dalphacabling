@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import logo from "../images/logo.svg";
+import logo from "../images/logo-dark.svg";
 
 function IndexPage() {
   return (
@@ -14,9 +14,12 @@ function IndexPage() {
             <p className="text-lg">
               Heltäckande lösningar inom säkerhets- och teleteknik.
             </p>
-            <button className="text-lg bg-white hover:bg-orange text-grey-darkest hover:text-white font-semibold mt-6 py-4 px-8 rounded-full">
+            <a
+              href="/services"
+              className="inline-block no-underline text-lg bg-white hover:bg-orange text-grey-darkest hover:text-white font-semibold mt-6 py-4 px-8 rounded-full"
+            >
               Se alla tjänster
-            </button>
+            </a>
           </div>
         </div>
       </div>
